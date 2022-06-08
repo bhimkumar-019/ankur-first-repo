@@ -15,6 +15,7 @@
 
     <div id="ankurdes">
         <h2>Ankur</h2>
+    <div id="mypic"></div>
     <p>Hello, This is Ankur.I'm from Etawah,UP.</p>
     <p>I am currently persuing electrical engineering from IIT (BHU) Varanasi.</p>
     <button onclick="changecolor()">sumbit</button>
@@ -46,7 +47,9 @@
             var para=document.getElementById("ankurdes");
             para.classList.add("addcolor");
             ison=true;
+            $('#mypic').add('<img id="theImg" src="./image/mypic.jpeg" />');
         }
+       
 
 
        }
