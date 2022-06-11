@@ -17,15 +17,15 @@
         <h2>Ankur</h2>
     <p>Hello, This is Ankur.I'm from Etawah,UP.</p>
     <p>I am currently persuing electrical eng. from IIT (BHU) Varanasi. And resing here</p>
-    <p>yay yay</p>
+    <p>yay yay yay</p>
     <button onclick="changecolor()">sumbit</button>
     </div>
     <style>
-        h1{
-
+        .hankur{
             text-align: center;
-            color: aqua;
-        }
+            color: black;
+            background-color: white;
+            }
 
         .addcolor{
             background-color: aqua;
@@ -42,18 +42,21 @@
         let ison=false;
        function changecolor()
        {
-           if(!ison)
+           if(ison===false)
         {
             var para=document.getElementById("ankurdes");
             para.classList.add("addcolor");
             ison=true;
         }
-
-
+        else {
+          var para=document.getElementById("ankurdes");
+          para.classList.remove("addcolor");
+          para.classList.add("hankur");
+          ison=false;
+        }
        }
 
-       var para=document.getElementById("ankurdes");
-       para.addEventListener("click",changecolor);
+       
     </script>
 </body>
 </html>
